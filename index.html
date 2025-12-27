@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 8岁生日快乐！🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="birthday-header">
+            <h1 class="birthday-title">🎂 8岁生日快乐！🎂</h1>
+            <div class="balloons">
+                <div class="balloon balloon-1">🎈</div>
+                <div class="balloon balloon-2">🎈</div>
+                <div class="balloon balloon-3">🎈</div>
+            </div>
+        </header>
+
+        <main class="birthday-content">
+            <div class="birthday-card">
+                <h2>🌟 特别的生日小公主！🌟</h2>
+                <p>今天是你最棒的一天！</p>
+                <button id="surpriseBtn" class="surprise-btn">点击获得惊喜！✨</button>
+            </div>
+
+            <div class="games-section">
+                <h3>🎮 生日游戏 🎮</h3>
+                
+                <div class="game balloon-pop">
+                    <h4>🎈 戳气球游戏！</h4>
+                    <div class="balloon-game">
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                    </div>
+                    <p class="score">已戳破气球：<span id="balloonScore">0</span> 个</p>
+                    <button onclick="resetBalloons()" class="reset-btn">重新开始</button>
+                </div>
+
+                <div class="game cake-candles">
+                    <h4>🕯️ 吹蜡烛游戏！</h4>
+                    <div class="cake">
+                        <div class="cake-base">🎂</div>
+                        <div class="candles">
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                        </div>
+                    </div>
+                    <p class="candle-message" id="candleMessage">点击蜡烛来吹灭它们！</p>
+                    <button onclick="resetCandles()" class="reset-btn">重新点燃蜡烛</button>
+                </div>
+            </div>
+
+            <div class="wishes-section">
+                <h3>💝 生日祝福 💝</h3>
+                <div class="wish-cards">
+                    <div class="wish-card">🌈 愿你的每一天都像彩虹一样美丽！</div>
+                    <div class="wish-card">🦄 愿你所有的梦想都能实现！</div>
+                    <div class="wish-card">🌟 你是最闪亮的小星星！</div>
+                    <div class="wish-card">🎨 继续做一个有创意的好孩子！</div>
+                </div>
+            </div>
+        </main>
+
+        <div class="confetti" id="confetti"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
